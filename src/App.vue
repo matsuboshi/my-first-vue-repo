@@ -95,7 +95,7 @@ export default {
           class="card"
           v-for="item in list"
           :key="item.id"
-          v-bind:class="{ 'highlight-update-row': isRowUpdating(item.id) }"
+          :class="{ 'highlight-update-row': isRowUpdating(item.id) }"
         >
           <p>
             <button class="btn-delete" @click="handleDelete(item.id)">
